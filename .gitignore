@@ -1,0 +1,4 @@
+*.lammpstrj
+*.lammps
+*.out
+*.atoms

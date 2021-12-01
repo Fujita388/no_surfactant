@@ -1,4 +1,4 @@
-#decomp.atomsとdecomp.lammpstrjを読み込んで座標を1.05倍にし、rescale.atomsをはく
+#decomp.lammpstrjを読み込んで座標をリスケールする
 
 class Atoms:
     def __init__(self, atoms_id, atoms_type, x, y, z, vx, vy, vz):

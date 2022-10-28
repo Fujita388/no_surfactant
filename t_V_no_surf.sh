@@ -1,9 +1,10 @@
 #!/bin/sh
 
-#SBATCH -p F1cpu
-#SBATCH -N 1
-#SBATCH -n 100
-#SBATCH -c 1
+#SBATCH -p F72cpu
+#SBATCH -N 72
+#SBATCH -n 128
+#SBATCH -c 72
+#SBATCH -t 24:00:00
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-user=naofuji.1220@gmail.com

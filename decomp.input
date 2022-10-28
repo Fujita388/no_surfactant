@@ -13,9 +13,9 @@ pair_coeff 1 1 1.0 1.0 3.0
 neighbor 0.3 bin
 neigh_modify every 20 delay 0 check no
 
-fix 1 all nvt temp 0.7 0.7 0.1
+fix 1 all nvt temp 0.88 0.88 0.1
 
-dump id all custom 1000 decomp.lammpstrj id type x y z vx vy vz
+dump id all custom 10000 decomp.lammpstrj id type x y z vx vy vz
 
 thermo 500
-run 100000
+run 200000

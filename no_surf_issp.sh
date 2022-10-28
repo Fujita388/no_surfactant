@@ -1,9 +1,9 @@
 #!/bin/sh
 
-#SBATCH -p F72cpu
-#SBATCH -N 72
+#SBATCH -p F144cpu
+#SBATCH -N 144
 #SBATCH -n 128
-#SBATCH -c 72
+#SBATCH -c 144
 #SBATCH -t 24:00:00
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END

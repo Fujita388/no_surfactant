@@ -7,6 +7,6 @@ cd $PBS_O_WORKDIR
 
 # 20プロセス並列
 python3 generate.py
-mpirun -np 20 /home/Fujita388/github/lammps/src/lmp_mpi < decomp.input
+mpirun -np 20 /home/Fujita388/github/lammps/src/lmp_mpi < decomp.input > decomp.out
 python3 rescale.py > rescale.atoms
-mpirun -np 20 /home/Fujita388/github/lammps/src/lmp_mpi < rescale.input
+mpirun -np 20 /home/Fujita388/github/lammps/src/lmp_mpi < rescale.input > rescale.out

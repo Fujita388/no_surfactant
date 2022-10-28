@@ -12,6 +12,6 @@
 source /home/issp/materiapps/intel/lammps/lammpsvars.sh
 
 python3 generate.py 
-srun lammps < decomp.input
+srun lammps < decomp.input > decomp.out
 python3 rescale.py > rescale.atoms
-srun lammps < rescale.input
+srun lammps < rescale.input > rescale.out

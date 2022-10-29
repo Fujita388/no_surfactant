@@ -1,10 +1,13 @@
 all:
 
 lab:
-	qsub no_surf_lab.sh
+	qsub bubble_no_surf_lab.sh
 
 issp:
-	sbatch no_surf_issp.sh
+	sbatch bubble_no_surf_ohtaka.sh
+
+kugui:
+	qsub bubble_no_surf_kugui.sh
 
 clean: 
-	$(RM) *.lammpstrj *.atoms *.out *.lammps no_surf_lab.sh.* 
+	$(RM) *.lammpstrj *.atoms *.out *.lammps bubble_no_surf.* 
